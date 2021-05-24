@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cert_Exam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYr-Z6-uHF">
+                                <rect key="frame" x="20" y="40.5" width="280" height="399"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cert_BG.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="vmo-RE-4bn">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="399"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Certification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="erU-IQ-E2p">
+                                        <rect key="frame" x="91" y="0.0" width="98" height="139.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="0iZ-k5-5Po">
+                                        <rect key="frame" x="105" y="0.0" width="70" height="279.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="발급자 : 금융결제원" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="E5D-uv-PV6">
+                                        <rect key="frame" x="91" y="0.0" width="98" height="359"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종류 : 은행" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7a6-HG-956">
+                                        <rect key="frame" x="91" y="0.0" width="56" height="419"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만료일 : 2018-03-06" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="2GT-ZK-FGd">
+                                        <rect key="frame" x="91" y="0.0" width="112" height="479"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vmo-RE-4bn" secondAttribute="bottom" id="0pB-72-w3s"/>
+                                    <constraint firstItem="7a6-HG-956" firstAttribute="leading" secondItem="2GT-ZK-FGd" secondAttribute="leading" id="2R1-dB-3k1"/>
+                                    <constraint firstItem="7a6-HG-956" firstAttribute="bottom" secondItem="vmo-RE-4bn" secondAttribute="bottom" multiplier="1.05" id="304-ws-Zfx"/>
+                                    <constraint firstItem="2GT-ZK-FGd" firstAttribute="width" secondItem="vmo-RE-4bn" secondAttribute="width" multiplier="0.4" id="4OI-Mk-M7C"/>
+                                    <constraint firstItem="vmo-RE-4bn" firstAttribute="leading" secondItem="WYr-Z6-uHF" secondAttribute="leading" id="5DB-aZ-aB0"/>
+                                    <constraint firstAttribute="trailing" secondItem="vmo-RE-4bn" secondAttribute="trailing" id="5i1-dn-0fv"/>
+                                    <constraint firstAttribute="width" secondItem="WYr-Z6-uHF" secondAttribute="height" multiplier="1009:1438" id="7D0-LT-5U6"/>
+                                    <constraint firstItem="0iZ-k5-5Po" firstAttribute="centerX" secondItem="vmo-RE-4bn" secondAttribute="centerX" id="ASe-5j-o5a"/>
+                                    <constraint firstItem="E5D-uv-PV6" firstAttribute="width" secondItem="vmo-RE-4bn" secondAttribute="width" multiplier="0.35" id="B2i-gr-EX3"/>
+                                    <constraint firstItem="E5D-uv-PV6" firstAttribute="bottom" secondItem="vmo-RE-4bn" secondAttribute="bottom" multiplier="0.9" id="CTJ-oZ-SPs"/>
+                                    <constraint firstItem="E5D-uv-PV6" firstAttribute="top" secondItem="vmo-RE-4bn" secondAttribute="top" id="J1Y-IS-X2n"/>
+                                    <constraint firstItem="erU-IQ-E2p" firstAttribute="bottom" secondItem="vmo-RE-4bn" secondAttribute="bottom" multiplier="0.35" id="OQ6-2y-jZB"/>
+                                    <constraint firstItem="7a6-HG-956" firstAttribute="leading" secondItem="E5D-uv-PV6" secondAttribute="leading" id="P4L-jd-Yn4"/>
+                                    <constraint firstItem="0iZ-k5-5Po" firstAttribute="bottom" secondItem="vmo-RE-4bn" secondAttribute="bottom" multiplier="0.7" id="PVS-qC-Soe"/>
+                                    <constraint firstItem="2GT-ZK-FGd" firstAttribute="top" secondItem="vmo-RE-4bn" secondAttribute="top" id="QUk-D0-NXi"/>
+                                    <constraint firstItem="0iZ-k5-5Po" firstAttribute="top" secondItem="vmo-RE-4bn" secondAttribute="top" id="TMc-uQ-xJZ"/>
+                                    <constraint firstItem="7a6-HG-956" firstAttribute="width" secondItem="vmo-RE-4bn" secondAttribute="width" multiplier="0.2" id="XFe-8X-P8z"/>
+                                    <constraint firstItem="2GT-ZK-FGd" firstAttribute="bottom" secondItem="vmo-RE-4bn" secondAttribute="bottom" multiplier="1.2" id="aoB-9c-qRW"/>
+                                    <constraint firstItem="0iZ-k5-5Po" firstAttribute="width" secondItem="vmo-RE-4bn" secondAttribute="width" multiplier="0.25" id="c6b-an-Cx6"/>
+                                    <constraint firstItem="erU-IQ-E2p" firstAttribute="centerX" secondItem="vmo-RE-4bn" secondAttribute="centerX" id="ik0-lo-xNu"/>
+                                    <constraint firstItem="7a6-HG-956" firstAttribute="top" secondItem="vmo-RE-4bn" secondAttribute="top" id="l4r-OA-u5b"/>
+                                    <constraint firstItem="erU-IQ-E2p" firstAttribute="width" secondItem="vmo-RE-4bn" secondAttribute="width" multiplier="0.35" id="mQI-Es-Uju"/>
+                                    <constraint firstItem="erU-IQ-E2p" firstAttribute="top" secondItem="vmo-RE-4bn" secondAttribute="top" id="rir-wx-q9q"/>
+                                    <constraint firstItem="vmo-RE-4bn" firstAttribute="top" secondItem="WYr-Z6-uHF" secondAttribute="top" id="wT3-qX-hr7"/>
+                                    <constraint firstItem="E5D-uv-PV6" firstAttribute="centerX" secondItem="vmo-RE-4bn" secondAttribute="centerX" id="ymN-es-Dpf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WYr-Z6-uHF" secondAttribute="trailing" constant="20" id="fev-24-BNF"/>
+                            <constraint firstItem="WYr-Z6-uHF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="syO-bQ-60z"/>
+                            <constraint firstItem="WYr-Z6-uHF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yzf-ez-kxa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cert_BG.PNG" width="1009" height="1438"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
